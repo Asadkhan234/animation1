@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:purple;
+}
+
+.circle{
+    width: 200px;
+    height: 200px;
+    border: 15px solid red;
+    margin: 20px auto;
+    margin-top: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+   animation: circle 3s  2s infinite forwards ;
+}
+
+@keyframes circle{
+    0%{border-color: red yellow green;transform: scale(1);}
+    25%{border-color: gold blue powderblue;transform: scale(1.1);}
+    50%{border-color: lime gray pink;transform: scale(1.3);}
+    75%{border-color: dodgerblue black darkorchid;transform: scale(1.1);}
+    100%{border-color: purple;transform: scale(1);}
+}
+
+.square{
+    width: 80px;
+    height: 80px;
+    border: 5px solid limegreen;
+    animation: square 3s ease-in-out infinite alternate-reverse ;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    color: rgb(0, 4, 255);
+}
+
+
+@keyframes square{
+    0%{transform: rotate(0deg) ;}
+    25%{border-color: aqua blueviolet red;border-width: 10px;color: red;}
+    50%{border-color: coral gold green;border-width: 20px;color: aqua;}
+    75%{border-color: yellow whitesmoke black;border-width: 40px; color: gold;}
+    100%{transform: rotate(360deg);border-width: 5px; color: greenyellow;}
+
+
+}
+
+/* .tri{
+    width: 300px;
+    height: 300px;
+    border: 5px solid black;
+    margin: -30px auto;
+    margin-top: 10%;
+    border-radius: 50%;
+    /* padding: -40px;; */
+    /* animation: tri 2s linear  infinite forwards ;
+}
+
+
+@keyframes tri{
+    0%{border-color: red;transform: scale(1);}
+    25%{border-color: gold;transform: scale(1.1);}
+    50%{border-color: lime;transform: scale(1.3);}
+    75%{border-color: dodgerblue;transform: scale(1.1);}
+    100%{border-color: purple;transform: scale(1);}
+} */ */
+
+
